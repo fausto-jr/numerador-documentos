@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <?!= include("pageCss"); ?>
+  </head>
+  <body>
+  <div class="container">
+  <div class="card"> <!-- NEW-->
+    <div class="row">
+        <div class="popup">          
+        <span class="popuptext" id="myPopup"></span>
+     </div>
+ 
+  <div class="card-action teal lighten-2 white-text">
+        <h4>Secretaria de Educação Ciência Tecnologia e Inovação</h4><h6>Numerador de Documentos</h6>
+        </div>
+  <div class="card-content">
+      <div class="row">
+        <div class="input-field col s6">
+          <input placeholder="Destino..." id="destino" type="text" class="validate" required>
+          <label for="first_name">Destino de Envio</label>
+        </div>
+        
+        <div class="input-field col s6">
+         <select id = "setor" required>
+      
+      <option value="" disabled selected>Escolha seu Setor</option>
+      <option value="Licitação">Licitação</option>
+      <option value="Gabinete">Gabinete</option>
+      <option value="RH">RH</option>
+      <option value="GEAD">Gestão E. A. de Dados</option>
+      <option value="Gescolar">Gestão Escolar</option>
+      <option value="TEscolar">Transporte Escolar</option>
+      <option value="GAE">Gerência da Alimentação Escolar</option>
+      <option value="GPAL">Gerência de P. A. e Logística</option>
+      <option value="GAEE">Gerência de A.E.E.</option>
+    </select>
+    <label>Setor:</label>
+        </div>
+       </div class="row">
+       
+      
+       
+       <div class="row">
+        <div class="input-field col s6">
+          <input placeholder="Observações/Descrição" id="obs" type="text" class="validate" required>
+          <label for="first_name">Obs:</label>
+        </div>
+        <div class="input-field col s6">
+            <input type="date" name="bday" id="bdate" required>
+            <label for="bdate">
+            </label>
+          </div>
+           <div class="input-field col s8">
+          <p>
+          <label>
+      <input class="with-gap" name="tipo" id="oficios" value="oficios" type="radio" checked/>
+      <span>OFÍCIO</span>
+    </label>
+    <label>
+      <input class="with-gap" name="tipo" id="ci" value="ci" type="radio" />
+      <span>C.I.</span>
+    </label>
+    <label>
+      <input class="with-gap" name="tipo"  id="portaria" value="portaria" type="radio" />
+      <span>PORTARIA</span>
+    </label>
+    <label>
+      <input class="with-gap" name="tipo"  id="oficiocircular" value="oficiocircular" type="radio" />
+      <span>OFÍCIO CIRCULAR</span>
+    </label>
+    <label>
+      <input class="with-gap" name="tipo"  id="parecer" value="parecer" type="radio" />
+      <span>PARECER</span>
+    </label>
+    <label>
+      <input class="with-gap" name="tipo" id="edital" value="edital" type="radio" />
+      <span>EDITAL</span>
+    </label>
+    
+  </p>
+  </div class="input-field col s6">
+          <div class="input-field col s12">
+    
+  
+         <button class="btn waves-effect waves-light" id = "btn">Gerar
+    <i class="material-icons right">send</i>
+  </button>
+        </div>
+        </div>
+      </div>
+
+  <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+       
+   <?!= include("pageJs"); ?>
+   </div class="card-content">
+   Obs:. Para adicionar setor falar com Fausto.
+    </div class="card">
+    </div class="container">
+    
+  </body>
+  
+
+</html>
+
+
